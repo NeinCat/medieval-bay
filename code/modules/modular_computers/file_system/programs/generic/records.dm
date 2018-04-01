@@ -83,9 +83,9 @@
 	var/newValue
 	switch(F.valtype)
 		if(EDIT_SHORTTEXT)
-			newValue = input(user, "Enter [F.name]:", "Record edit", html_decode(F.get_value())) as null|text
+			newValue = input(user, "Enter [F.name]:", "Record edit", rhtml_decode(F.get_value())) as null|text
 		if(EDIT_LONGTEXT)
-			newValue = replacetext(input(user, "Enter [F.name]. You may use HTML paper formatting tags:", "Record edit", replacetext(html_decode(F.get_value()), "\[br\]", "\n")) as null|message, "\n", "\[br\]")
+			newValue = replacetext(input(user, "Enter [F.name]. You may use HTML paper formatting tags:", "Record edit", replacetext(rhtml_decode(F.get_value()), "\[br\]", "\n")) as null|message, "\n", "\[br\]")
 		if(EDIT_NUMERIC)
 			newValue = input(user, "Enter [F.name]:", "Record edit", F.get_value()) as null|num
 		if(EDIT_LIST)

@@ -1,7 +1,7 @@
 //This file was auto-corrected by findeclaration.exe on 25.5.2012 20:42:32
 
 proc/Intoxicated(phrase)
-	phrase = html_decode(phrase)
+	phrase = rhtml_decode(phrase)
 	var/leng=lentext(phrase)
 	var/counter=lentext(phrase)
 	var/newphrase=""
@@ -24,7 +24,7 @@ proc/Intoxicated(phrase)
 	return newphrase
 
 proc/NewStutter(phrase,stunned)
-	phrase = html_decode(phrase)
+	phrase = rhtml_decode(phrase)
 
 	var/list/split_phrase = splittext(phrase," ") //Split it up into words.
 
@@ -94,7 +94,7 @@ proc/RadioChat(mob/living/user, message, distortion_chance = 60, distortion_spee
 	var/datum/language/language
 	if(user)
 		language = user.get_default_language()
-	message = html_decode(message)
+	message = rhtml_decode(message)
 	var/new_message = ""
 	var/input_size = length(message)
 	var/lentext = 0

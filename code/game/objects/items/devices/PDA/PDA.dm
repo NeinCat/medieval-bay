@@ -682,7 +682,7 @@ var/global/list/obj/item/device/pda/PDAs = list()
 			if (in_range(src, U) && loc == U)
 				n = sanitizeSafe(n, extra = 0)
 				if (mode == 1)
-					note = html_decode(n)
+					note = rhtml_decode(n)
 					notehtml = note
 					note = replacetext(note, "\n", "<br>")
 			else
@@ -1084,7 +1084,7 @@ var/global/list/obj/item/device/pda/PDAs = list()
 		return
 	var/track = ""
 	if(ismob(sending_unit.loc) && isAI(loc))
-		track = "(<a href='byond://?src=\ref[loc];track=\ref[sending_unit.loc];trackname=[html_encode(sender)]'>Follow</a>)"
+		track = "(<a href='byond://?src=\ref[loc];track=\ref[sending_unit.loc];trackname=[rhtml_encode(sender)]'>Follow</a>)"
 
 	var/reception_message = "\icon[src] <b>Message from [sender] ([sender_job]), </b>\"[message]\" (<a href='byond://?src=\ref[src];choice=Message;skiprefresh=1;target=\ref[sending_unit]'>Reply</a>) [track]"
 	new_info(message_silent, newstone, reception_message)
