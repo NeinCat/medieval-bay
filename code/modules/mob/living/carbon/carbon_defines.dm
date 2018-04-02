@@ -40,3 +40,5 @@
 
 	var/list/stasis_sources = list()
 	var/stasis_value
+
+	var/social_class = SOC_CLASS_MED

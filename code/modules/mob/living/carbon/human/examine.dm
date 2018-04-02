@@ -8,6 +8,7 @@
 	var/skipeyes = 0
 	var/skipface = 0
 
+
 	//exosuits and helmets obscure our view and stuff.
 	if(wear_suit)
 		skipgloves = wear_suit.flags_inv & HIDEGLOVES
@@ -53,6 +54,9 @@
 	var/extra_species_text = species.get_additional_examine_text(src)
 	if(extra_species_text)
 		msg += "[extra_species_text]<br>"
+
+	var/classdesc = get_social_description(T)
+	msg += "[T.He] [T.is] [get_social_class()]. [classdesc]\n"
 
 	msg += "<br>"
 
@@ -266,6 +270,7 @@
 		msg += "<span class='danger'>[src] [T.has] \a [implant.name] sticking out of [T.his] flesh!</span>\n"
 	if(digitalcamo)
 		msg += "[T.He] [T.is] repulsively uncanny!\n"
+
 
 	if(hasHUD(user, HUD_SECURITY))
 		var/perpname = "wot"

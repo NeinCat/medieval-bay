@@ -278,3 +278,8 @@
 #define AURA_TYPE_WEAPON "Weapon"
 #define AURA_TYPE_THROWN "Thrown"
 #define AURA_TYPE_LIFE   "Life"
+
+#define SOC_CLASS_LOW 1
+#define SOC_CLASS_MED 2
+#define SOC_CLASS_HIGH 3
+#define SOC_CLASS_MAX 4
