@@ -5,9 +5,13 @@
 
 #define END_FOR_DVIEW dview_mob.loc = null
 
+#define LIGHTING_INTERVAL       2 // frequency, in 1/10ths of a second, of the lighting process
+
 #define LIGHTING_FALLOFF 1 // type of falloff to use for lighting; 1 for circular, 2 for square
 #define LIGHTING_LAMBERTIAN 0 // use lambertian shading for light sources
 #define LIGHTING_HEIGHT 1 // height off the ground of light sources on the pseudo-z-axis, you should probably leave this alone
+#define LIGHTING_ANIMATE_TIME   1.5
+
 
 #define LIGHTING_LAYER 10 // drawing layer for lighting overlays
 #define LIGHTING_ICON 'icons/effects/lighting_overlay.dmi' // icon used for lighting shading effects
@@ -29,6 +33,17 @@
 		LIGHTING_SOFT_THRESHOLD, LIGHTING_SOFT_THRESHOLD, LIGHTING_SOFT_THRESHOLD, 0, \
 		0, 0, 0, 1           \
 	)                        \
+
+#define SUNLIGHTING_BASE_MATRIX \
+	list                     \
+	(                        \
+		1, 1, 1, 0, \
+		1, 1, 1, 0, \
+		1, 1, 1, 0, \
+		1, 1, 1, 0, \
+		0, 0, 0, 1           \
+	)
+
 
 // Helpers so we can (more easily) control the colour matrices.
 #define CL_MATRIX_RR 1

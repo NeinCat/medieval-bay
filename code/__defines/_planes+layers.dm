@@ -144,22 +144,22 @@ What is the naming convention for planes or layers?
 #define HUMAN_PLANE                   -11 // For Humans that are standing up.
 	// MOB_LAYER 4
 
-#define MOB_PLANE                      -7 // For Mobs.
+#define MOB_PLANE                      -8 // For Mobs.
 	// MOB_LAYER 4
 
-#define ABOVE_HUMAN_PLANE              -6 // For things that should appear above humans.
+#define ABOVE_HUMAN_PLANE              -7 // For things that should appear above humans.
 
 	#define ABOVE_HUMAN_LAYER  0
 	#define VEHICLE_LOAD_LAYER 1
 	#define CAMERA_LAYER       2
 
-#define BLOB_PLANE                     -5 // For Blobs, which are above humans.
+#define BLOB_PLANE                     -6 // For Blobs, which are above humans.
 
 	#define BLOB_SHIELD_LAYER		1
 	#define BLOB_NODE_LAYER			2
 	#define BLOB_CORE_LAYER			3
 
-#define EFFECTS_BELOW_LIGHTING_PLANE   -4 // For special effects.
+#define EFFECTS_BELOW_LIGHTING_PLANE   -5 // For special effects.
 
 	#define BELOW_PROJECTILE_LAYER  2
 	#define FIRE_LAYER              3
@@ -168,15 +168,17 @@ What is the naming convention for planes or layers?
 	#define SINGULARITY_LAYER       6
 	#define POINTER_LAYER           7
 
-#define OBSERVER_PLANE                 -3 // For observers and ghosts
+#define OBSERVER_PLANE                 -4 // For observers and ghosts
 
-#define LIGHTING_PLANE 			       -2 // For Lighting. - The highest plane (ignoring all other even higher planes)
+#define LIGHTING_PLANE 			       -3 // For Lighting. - The highest plane (ignoring all other even higher planes)
 
 	#define LIGHTBULB_LAYER        0
 	#define LIGHTING_LAYER         1
 	#define ABOVE_LIGHTING_LAYER   2
 	#define SUPER_PORTAL_LAYER     3
 	#define NARSIE_GLOW            4
+
+#define SUNLIGHTING_PLANE 				-2
 
 #define EFFECTS_ABOVE_LIGHTING_PLANE   -1 // For glowy eyes, laser beams, etc. that shouldn't be affected by darkness
 	#define EYE_GLOW_LAYER         1
