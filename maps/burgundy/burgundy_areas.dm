@@ -14,47 +14,14 @@
 		/area/shuttle/administration/centcom,
 		/area/shuttle/specops/centcom,
 	)
-/*
-//Fifth Deck (Z-1) Coming SoonTM
-/area/hallway/primary/fifthdeck/fore
-	name = "\improper Fifth Deck Fore Hallway"
-	icon_state = "hallF"
 
-/area/hallway/primary/fifthdeck/center
-	name = "\improper Fifth Deck Central Hallway"
-	icon_state = "hallC3"
 
-/area/hallway/primary/fifthdeck/aft
-	name = "\improper Fifth Deck Aft Hallway"
-	icon_state = "hallA"
+/area/medibay/outdoor
+	name = "Outdoor"
+	icon_state = "yellow"
+	requires_power = 0
 
-/area/maintenance/fifthdeck
-	name = "Fifth Deck Maintenance"
-	icon_state = "maintcentral"
 
-/area/maintenance/fifthdeck/aft
-	name = "Fifth Deck Aft Maintenance"
-	icon_state = "amaint"
-
-/area/maintenance/fifthdeck/foreport
-	name = "Fifth Deck Fore Port Maintenance"
-	icon_state = "fpmaint"
-
-/area/maintenance/fifthdeck/forestarboard
-	name = "Fifth Deck Fore Starboard Maintenance"
-	icon_state = "fsmaint"
-
-/area/maintenance/fifthdeck/starboard
-	name = "Fifth Deck Starboard Maintenance"
-	icon_state = "smaint"
-
-/area/teleporter/fifthdeck
-	name = "\improper Fifth Deck Teleporter"
-	icon_state = "teleporter"
-
-/area/maintenance/substation/fifthdeck
-	name = "Fifth Deck Substation"
-*/
 //Fourth Deck (Z-1)
 /area/hallway/primary/fourthdeck/fore
 	name = "\improper Fourth Deck Fore Hallway"

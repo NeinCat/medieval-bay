@@ -53,6 +53,18 @@ GLOBAL_VAR(spawntypes)
 	..()
 	turfs = GLOB.latejoin_gateway
 
+/datum/spawnpoint/harbor
+	display_name = "Harbor"
+	msg = "has came from Harbor"
+
+/datum/spawnpoint/mine
+	display_name = "Mine"
+	msg = "has came from mines"
+
+/datum/spawnpoint/farm
+	display_name = "Farm"
+	msg = "has came from wilderness"
+
 /datum/spawnpoint/cryo
 	display_name = "Cryogenic Storage"
 	msg = "has completed cryogenic revival"

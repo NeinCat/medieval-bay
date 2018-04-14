@@ -1,11 +1,10 @@
 /datum/map/burgundy
-	emergency_shuttle_docked_message = "Attention all hands: the escape pods are now unlocked. You have %ETD% to board the escape pods."
-	emergency_shuttle_leaving_dock = "Attention all hands: the escape pods have been launched, arriving at rendezvous point in %ETA%."
+	emergency_shuttle_docked_message = "A ship in our port! We have %ETD% to get inside."
+	emergency_shuttle_leaving_dock = "The ship left the city. He will arrive in the capital's port in %ETA%."
 
-	emergency_shuttle_called_message = "Attention all hands: emergency evacuation procedures are now in effect. Escape pods will unlock in %ETA%"
-	emergency_shuttle_called_sound = sound('sound/AI/torch/abandonship.ogg', volume = 45)
+	emergency_shuttle_called_message = "The pigeons reported that His Majesty's ship had left for the city. We hope you will escape from the doomed city. They say that the ship will come in %ETA%"
 
-	emergency_shuttle_recall_message = "Attention all hands: emergency evacuation sequence aborted. Return to normal operating conditions."
+	emergency_shuttle_recall_message = "Another postal pigeon flew in. He carried a message that there would be no ship!"
 
 	command_report_sound = sound('sound/AI/torch/commandreport.ogg', volume = 45)
 
